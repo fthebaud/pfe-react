@@ -16,7 +16,6 @@ const D3ExamplePage = () => {
 
     return (
         <div className="d3-example-page">
-            <svg ref={containerRef} />
             <a
                 href="https://www.d3-graph-gallery.com/spider"
                 target="_blank"
@@ -24,6 +23,7 @@ const D3ExamplePage = () => {
             >
                Radar graph with d3
             </a>
+            <svg ref={containerRef} />
         </div>
     );
 };

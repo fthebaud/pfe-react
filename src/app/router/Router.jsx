@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 import { ROUTES_COMPONENTS } from './router.config';
-import { D3_EXAMPLE_ROUTE, HOME_ROUTE } from './routes.const';
+import { HOME_ROUTE, CHARTJS_EXAMPLE_ROUTE, D3_EXAMPLE_ROUTE } from './routes.const';
 
 const Router = () => (
     <BrowserRouter>
@@ -16,6 +16,11 @@ const Router = () => (
                 exact
                 path={D3_EXAMPLE_ROUTE}
                 component={ROUTES_COMPONENTS[D3_EXAMPLE_ROUTE]}
+            />
+            <Route
+                exact
+                path={CHARTJS_EXAMPLE_ROUTE}
+                component={ROUTES_COMPONENTS[CHARTJS_EXAMPLE_ROUTE]}
             />
         </Switch>
     </BrowserRouter>
